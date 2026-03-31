@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+a {
+    text-decoration: none !important;
+}
+.main-navbar {
+    background-color: #040c18;
+    color: #fff;
+}
+.nav_logo {
+    height: 50px;
+    width: 40px;
+    transform: scale(1.5);
+}
+.nav-name {
+    font-weight: 800;
+    font-size: 22px;
+    color: #fff !important;
+}
+.search-box {
+    display: flex;
+    width: 40%;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.search-box input {
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    outline: none;
+}
+.search-box button {
+    background: red;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+}
+.nav-icons i {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.menu-bar {
+    background: #232f3e;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.menu-bar a {
+    color: #cfcfcf;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.menu-bar a:hover {
+    color: #ffffff;
+}
+.menu-bar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: red;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+.menu-bar a:hover::after {
+    width: 100%;
+}
+.menu-bar a.active {
+    color: #ff2c2c;
+}
+.menu-bar a.active::after {
+    width: 100%;
+}
+.menu-bar a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.menu-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.menu-bar a:hover {
+    background: rgba(255,255,255,0.05);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.menu-bar a.active {
+    color: #ff2c2c;
+    font-weight: 700;
+}
+
+.logout-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    padding: 1px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 39px;
+}
+
+/* Hover Effect */
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+}
+
+/* Click Effect */
+.logout-btn:active {
+    transform: scale(0.95);
+}

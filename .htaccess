@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^deviceData/?$ index.php?source=deviceData [L,QSA]
+RewriteRule ^getDeviceData/?$ index.php?source=getDeviceData [L,QSA]

@@ -1,0 +1,172 @@
+.banner-img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.banner-content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+  width: 100%;
+  background-color: #95c504bf;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo{
+  font-size: 25px;
+  margin-left: 35px;
+}
+
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.popUp {
+  overflow-y: hidden;
+  background: url("../images/sales_panel_bg.jpg");
+  transition: 0.4s linear;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.loginForm {
+  width: 400px;
+  position: absolute;
+  left: 68%;
+  top: 21%;
+  background: rgb(255 255 255);
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.loginForm h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #000000;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+input::placeholder {
+  color: #000000b5;
+  letter-spacing: 0px;
+}
+
+.loginForm .input-box {
+  position: relative;
+}
+
+.loginForm .input-box input {
+  width: 95%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #000000b5;
+  border: 1px solid #818080;
+  letter-spacing: 1px;
+  background: transparent;
+  outline: none;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+/* .loginForm .input-box input:-webkit-autofill {
+ display: none  ;
+} */
+.loginForm a {
+  color: #2271d3;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 16px;
+  font-family: sans-serif;
+}
+.loginForm a:hover{
+  color: #95c504bf;
+}
+
+.loginForm .input-box label {
+  color: #0f0f0f;
+  padding: 10px 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.loginForm .input-box input:focus ~ label,
+.loginForm .input-box input:valid ~ label {
+  top: -28px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+
+.loginForm input[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  background-color: #a4db00;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.loginForm input[type="submit"]:hover {
+  background-color: #16b3ef;
+}
+.formLink{
+  font-size: 13px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 65px;
+  left: 5px;
+  color: #2271d3;
+  font-family: sans-serif;
+}
+
+body{
+  height:100%;
+  width: 100%;
+}
+
+body{
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
